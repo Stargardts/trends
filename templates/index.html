@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Leaflet Map with Custom Labels</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+        }
+
+        .custom-label {
+            display: none;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 3px;
+            text-align: center;
+            white-space: pre;
+        }
+
+        /* .custom-div-icon { */
+        /*     background: rgba(255, 255, 255, 0.8); */
+        /*     border: 1px solid black; */
+        /*     padding: 5px; */
+        /*     border-radius: 3px; */
+        /*     text-align: center; */
+        /* } */
+        /**/
+        /* .custom-div-icon span { */
+        /*     font-size: 12px; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="ukLabel" class="custom-label">UK<br>Some text</div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-label@0.2.4/dist/leaflet.label.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
